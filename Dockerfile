@@ -22,4 +22,4 @@ RUN apt-get install -y fonts-oflb-asana-math
 RUN mkdir /data
 WORKDIR /data
 
-ENTRYPOINT pdflatex 
+ENTRYPOINT ["pdflatex"] 

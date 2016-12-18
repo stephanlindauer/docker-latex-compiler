@@ -18,8 +18,9 @@ RUN apt-get install -y texlive-luatex
 RUN apt-get install -y fonts-linuxlibertine
 RUN apt-get install -y fonts-inconsolata
 RUN apt-get install -y fonts-oflb-asana-math
+RUN apt-get install -y biber
 
 RUN mkdir /data
 WORKDIR /data
 
-ENTRYPOINT ["pdflatex"] 
+ENTRYPOINT ["pdflatex"]

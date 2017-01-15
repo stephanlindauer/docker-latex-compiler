@@ -23,4 +23,4 @@ RUN apt-get install -y biber
 RUN mkdir /data
 WORKDIR /data
 
-ENTRYPOINT ["pdflatex"]
+CMD pdflatex _DaBa.tex && biber _DaBa && pdflatex _DaBa.tex
